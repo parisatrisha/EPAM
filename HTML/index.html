@@ -1,0 +1,35 @@
+x<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Light Bulb GIF Effect</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #333;
+    }
+
+    .light-bulb {
+      width: 200px;
+      height: auto;
+      animation: blink 1s infinite;
+    }
+
+    @keyframes blink {
+      0%, 100% {
+        filter: brightness(0.5);
+      }
+      50% {
+        filter: brightness(1.5);
+      }
+    }
+  </style>
+</head>
+<body>
+  <img src="your-image-path.png" alt="Light Bulb" class="light-bulb">
+</body>
+</html>
